@@ -1,38 +1,154 @@
-.App {
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  text-align: center;
+  background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+}
+
+
+/* ==== Title Section ==== */
+
+.title {
+  font-weight: bold;
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  color: white
+}
+
+.title-bold {
+  color: #4A5494;
+}
+
+.description {
+  font-size: 22px;
+  margin-bottom: 7rem;
+  margin-top: 0;
+  color: black;
+  font-weight: 700;
+  font-size: 25px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* ==== Converter Container ==== */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+
+.small-container {
+  border: 5px solid #C49BB5;
+  padding: 5rem;
+  margin-bottom: 30px;
+  margin-top: -30px;
+  box-shadow: 10px 10px 10px #9E767B;
+  background-color: #C49BB5;
+}
+
+/* ==== Converter ==== */
+
+.converter-title {
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+}
+
+.input {
+  border: 2px solid #9E767B;
+  border-radius: .3em;
+  padding: .25rem;
+  max-width: 100vw;
+  height: auto;
+  font-weight: bold;
+}
+
+select {
+  margin-left: .5rem;
+  border: 2px solid #9E767B;
+  font-weight: bold;
+}
+
+.equals {
+  font-size: 3rem;
+  font-weight: bold;
+
+}
+
+option {
+  text-align: center;
+}
+
+/* ==== Questions Section and Button ==== */
+
+button {
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 2px solid #CF979E;
+  background-color: #CF979E;
+  padding: 10px;
+  width: auto;
+  margin-bottom: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  border: 2px solid brown;
+  background-color: brown;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ==== Footer ==== */
+
+footer {
+  margin: 0;
+  margin-top: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-image: #9e768f;
 }
+
+li {
+  display: inline-block;
+  padding-right: 20px;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.fa-brands, .fa-solid {
+  text-decoration: none;
+  color: #d0d9de;
+}
+
+.fa-linkedin:hover {
+  color: #0A66C2;
+}
+
+.fa-twitter:hover {
+  color: #1DA1F2;
+}
+
+.fa-envelope:hover {
+  color: brown;
+}
+
+.right {
+  height: fit-content;
+  margin-right: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #d0d9de;
+}
+
+/* ==== Breakpoints ==== */
+
+/* None added for now, as the project is relatively simple 
+and seems to be more or less responsive on its own */
