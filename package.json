@@ -37,7 +37,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }, 
-  "homepage": "http://kevinjung13.github.io/currency-exchange",
-  "devDependencies": {}
+  },
+  "homepage": "http://kevinjung13.github.io/currency-exchange"
 }
